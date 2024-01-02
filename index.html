@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="script.js"></script>
+  <title>Resume</title>
+  <style>
+    body {
+      background-color: #030000;
+    }
+
+    .output {
+      text-align: center;
+      font-family: 'Source Code Pro', monospace;
+      color: white;
+    }
+
+    .output h1 {
+      font-size: 80px;
+    }
+
+    /* Cursor Styling */
+    .cursor::after {
+      content: '';
+      display: inline-block;
+      margin-left: 3px;
+      background-color: white;
+      animation-name: blink;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+    }
+
+    h1.cursor::after {
+      height: 24px;
+      width: 13px;
+    }
+
+    p.cursor::after {
+      height: 13px;
+      width: 6px;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      49% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="output" id="output">
+      <h1 class="cursor"></h1>
+      <p></p>
+    </div>
+  </div>
+</body>
+</html>
