@@ -5,7 +5,7 @@ var i = 0,
 
 var textArray = [
    
-  "JCurrently in 1st Year.", 
+  " Currently in 1st Year.", 
   "Developing Projects and Working on Progress",
   "Resume Building Under Process",
   "Kindly Wait",
